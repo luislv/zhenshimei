@@ -1,0 +1,63 @@
+/*导航*/
+.nav{width:870px}
+.nav li{margin-right:55px}
+.nav li a{color:#7d7d7d}
+.nav li a.active{color:#0541ad}
+/*商城下拉列表*/
+.shop-dropdown{width:183px;left:-53px;top:88px}
+.shop-dropdown li.item{border-bottom:1px solid #4d4d4d;margin-right:0}
+.shop-dropdown li.item:last-child{border-bottom:none}
+/*焦点图*/
+.hotPic{height:523px}
+.arrow-left{top:220px;left:25px}
+.arrow-right{top:220px;right:25px}
+.arrow-left i, .arrow-right i{font-size:65px;color:#fff}
+.pagination{bottom:30px}
+.swiper-pagination-switch{display:inline-block;width:16px;height:16px;margin:0 18px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background-color:#6aace5}
+.swiper-active-switch{background-color:#fff}
+/*焦点图2*/
+.hotPic2{height:200px;margin-top:70px}
+.swiper-container2{margin-left:85px;margin-right:85px}
+.arrow-left2, .arrow-right2{width:68px;height:108px;padding-top:37px;top:30px}
+.arrow-left2{left:0}
+.arrow-right2{right:0}
+.arrow-left2 i, .arrow-right2 i{font-size:65px;color:#fff}
+/*主内容*/
+.mainContent{height:2052px;background:url(../images/mainContent-bg.png) no-repeat 0 0}
+.mainContent .bg-rect1{top:370px;right:106px}
+.mainContent .bg-rect2{top:440px;right:82px}
+.mainContent .bg-rect3{top:982px;left:128px}
+.main-title{padding-top:95px}
+.main-figure{width:507px;padding: 64px 0 63px;}
+.main-figure .item1{left:127px}
+.main-figure .item2{left:3px}
+.main-figure .item3{right:127px}
+.main-figure .item4{right:3px}
+.main-detail{margin:0 150px 0 650px;padding-top:150px}
+.main-detail h3, .main-detail2 h3{font-size:32px}
+.main-detail h3 strong, .main-detail2 h3 strong{font-size:40px}
+.main-wrap2{margin-top:-30px}
+.main-detail2{margin:0 650px 0 150px;padding-top:210px}
+/*证书*/
+.certification{height:431px;background:url(../images/certification-bg.jpg) no-repeat 0 0;padding-top:65px}
+/*创新工艺*/
+.technology{padding:75px 0 60px;background-color:#f8f9f1}
+.technology-wrap{margin-left:69px}
+.technology-article{width:625px}
+.technology-article .detail{margin-left:255px}
+.technology-article .detail .consult{padding:7px 0;width:123px}
+/*资讯动态*/
+.info-wrap, .contact-wrap, .footer-wrap{width:1302px;margin-left:auto;margin-right:auto}
+.info-article, .contact{margin:auto -15px}
+.info-article li, .contact li{width:414px;margin:auto 15px}
+.info-article li h3{text-overflow:ellipsis;white-space:nowrap}
+.info-article li .article{height:48px;overflow:hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+/*联系方式*/
+.contact li i{font-size:65px}
+/*底部*/
+.footer-wrap{padding:70px 0 110px}
+.footer-wrap .item1{width:200px}
+.footer-wrap .item2{width:167px}
+.footer-wrap .item3{width:210px}
+.footer-wrap .item4{width:400px;margin-right:80px}
+.footer-qrcode{width:160px}
