@@ -61,3 +61,5 @@
 .footer-wrap .item3{width:210px}
 .footer-wrap .item4{width:400px;margin-right:80px}
 .footer-qrcode{width:160px}
+/*侧边栏浮窗*/
+.aside-modal{position:fixed;top:536px;right:21px;width:200px;box-shadow:0 0 10px #888}

@@ -21,6 +21,7 @@ fieldset{border:0 none;margin:0;padding:0}
 .vt{vertical-align:top}
 .ti{text-indent:2em}
 .tdu{text-decoration:underline}
+.hand{cursor:pointer}
 .zx1{z-index:1}
 .zx2{z-index:2}
 .fs28{font-size:28px}
@@ -34,10 +35,12 @@ fieldset{border:0 none;margin:0;padding:0}
 .typo-8gray, a.typo-8gray{color:#888}
 .typo-8fgray, a.typo-8fgray{color:#8f8f8f}
 .typo-03green, a.typo-03green{color:#03cb55}
+.bg-02blue{background-color:#024cc7}
 .bg-00green{background-color:#00b249}
 .bg-03green{background-color:#03cb55}
 .bg-white{background-color:#fff}
 .bg-37gray{background-color:#37383c}
+.bg-f3gray{background-color:#f3f8ff}
 .bg-transparent-4gray{background-color:#000;background:rgba(0,0,0,0.4);filter:alpha(opacity=40)}
 .bg-transparent-5gray{background-color:#000;background:rgba(0,0,0,0.5);filter:alpha(opacity=50)}
 .opacity3{opacity:0.3;filter:alpha(opacity=30)}

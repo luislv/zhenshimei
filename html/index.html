@@ -23,11 +23,11 @@
             <li class="fl pt40 pb30 fs18 lh1"><a href="#" class="typo-7dgray">产品中心</a></li>
             <li class="fl pt40 pb30 fs18 lh1"><a href="#" class="typo-7dgray">专家团队</a></li>
             <li class="fl pt40 pb30 fs18 lh1 pr">
-                <a href="#" class="typo-7dgray">网上商城</a>
-                <ul class="shop-dropdown pa zx2">
+                <a href="javascript:void(0);" class="J_shop typo-7dgray">网上商城</a>
+                <ul class="J_shopDropdown shop-dropdown pa zx2 hide">
                     <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">阿里巴巴</a></li>
-                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">阿里巴巴</a></li>
-                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">阿里巴巴</a></li>
+                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">京东商城</a></li>
+                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">天猫旗舰店</a></li>
                 </ul>
             </li>
             <li class="fl pt40 pb30 fs18 lh1"><a href="#" class="typo-7dgray">联系我们</a></li>
@@ -242,14 +242,45 @@
         </div>
     </div>
 </div>
-<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<!--侧边栏浮窗-->
+<div class="J_asideModal aside-modal">
+    <h3 class="fn fs18 lh1 pt15 pr15 pb15 pl20 typo-white bg-02blue">在线咨询<i class="J_close iconfont fr hand">&#xe661;</i></h3>
+    <div class="pl20 pt10 pb10 fs14 lh1 typo-02blue bg-f3gray"><i class="iconfont fs28 lh1 mr15 vm">&#xe606;</i>337168999</div>
+    <div class="pt10 pb15 pl25 fs14 lh1 typo-02blue bg-white">
+        <p><i class="iconfont fs24 lh1 mr15">&#xe65d;</i>联系我们</p>
+        <p class="mt10 fs16 lh1">0755-29480858</p>
+    </div>
+</div>
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/idangerous.swiper.min.js"></script>
 <script type="text/javascript">
     $(function() {
         /**
+         *  导航下拉列表
+         */
+        $('.J_shop').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.J_shopDropdown').slideToggle('fast');
+        });
+        $(document).on('click', function() {
+            $('.J_shopDropdown').slideUp('fast');
+        });
+
+        /**
+         *  关闭
+         */
+        $('.J_asideModal').on('click',  function(e) {
+            var e = window.event || e;
+            var target = e.target || e.srcElement;
+            if($(target).hasClass('J_close')) {
+                $(this).addClass('hide');
+            }
+        });
+
+        /**
          *  焦点图
-        */
+         */
         var mySwiper = new Swiper('.swiper-container',{
             pagination: '.pagination',
             loop: true,
