@@ -29,17 +29,22 @@ fieldset{border:0 none;margin:0;padding:0}
 .typo-white, a.typo-white{color:#fff !important}
 .typo-29blue, a.typo-29blue{color:#291783}
 .typo-02blue, a.typo-02blue{color:#024cc7}
+.typo-24blue, a.typo-24blue{color:#2444a5}
 .typo-3gray, a.typo-3gray{color:#333}
+.typo-6gray, a.typo-6gray{color:#666}
 .typo-cgray, a.typo-cgray{color:#ccc}
 .typo-49gray, a.typo-49gray{color:#494949}
 .typo-8gray, a.typo-8gray{color:#888}
 .typo-8fgray, a.typo-8fgray{color:#8f8f8f}
 .typo-03green, a.typo-03green{color:#03cb55}
 .bg-02blue{background-color:#024cc7}
+.bg-e2blue{background-color:#e2ecfd}
+.bg-ccblue{background-color:#ccdbf4}
 .bg-00green{background-color:#00b249}
 .bg-03green{background-color:#03cb55}
 .bg-white{background-color:#fff}
 .bg-37gray{background-color:#37383c}
+.bg-e8gray{background-color:#e8e8e8}
 .bg-f3gray{background-color:#f3f8ff}
 .bg-transparent-4gray{background-color:#000;background:rgba(0,0,0,0.4);filter:alpha(opacity=40)}
 .bg-transparent-5gray{background-color:#000;background:rgba(0,0,0,0.5);filter:alpha(opacity=50)}
@@ -48,11 +53,14 @@ fieldset{border:0 none;margin:0;padding:0}
 .ml35{margin-left:35px}
 .mb3-m{margin-bottom:-3px}
 .bor-b-1edgray{border-bottom:1px solid #edf3fa}
+.bor-b-1b7gray{border-bottom:1px solid #b7cdf2}
 .bor-b-dbdgray{border-bottom:1px solid #dbdbdb}
+.bor-b-d2dgray{border-bottom:1px solid #d2d2d2}
 
 
 /*布局类*/
 .layout{width:1440px;margin:0 auto}
+.layout-con{width:1240px;margin:0 auto}
 
 /*图标类*/
 
@@ -79,3 +87,30 @@ fieldset{border:0 none;margin:0;padding:0}
 /*layer弹出层样式*/
 
 /*滚动条自定义样式*/
+
+/*导航*/
+.nav{width:870px}
+.nav li{margin-right:55px}
+.nav li a{color:#7d7d7d}
+.nav li a.active{color:#0541ad}
+/*商城下拉列表*/
+.shop-dropdown{width:183px;left:-53px;top:88px}
+.shop-dropdown li.item{border-bottom:1px solid #4d4d4d;margin-right:0}
+.shop-dropdown li.item:last-child{border-bottom:none}
+/*侧边菜单栏*/
+.menu-bar{width:323px}
+.menu-bar .serial{width:4px;height:22px;}
+.menu-bar .recommond-product{width:298px;height:298px;margin-left:auto;margin-right:auto}
+.layout-con-contact{padding-bottom:80px}
+.content-area{margin-left:353px}
+/*底部*/
+.contact-wrap, .footer-wrap{width:1302px;margin-left:auto;margin-right:auto}
+.contact{margin:auto -15px}
+.contact li{width:414px;margin:auto 15px}
+.contact li i{font-size:65px}
+.footer-wrap{padding:70px 0 110px}
+.footer-wrap .item1{width:200px}
+.footer-wrap .item2{width:167px}
+.footer-wrap .item3{width:210px}
+.footer-wrap .item4{width:400px;margin-right:80px}
+.footer-qrcode{width:160px}
