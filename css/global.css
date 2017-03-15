@@ -32,6 +32,7 @@ fieldset{border:0 none;margin:0;padding:0}
 .typo-24blue, a.typo-24blue{color:#2444a5}
 .typo-3gray, a.typo-3gray{color:#333}
 .typo-6gray, a.typo-6gray{color:#666}
+.typo-9gray, a.typo-9gray{color:#999}
 .typo-cgray, a.typo-cgray{color:#ccc}
 .typo-49gray, a.typo-49gray{color:#494949}
 .typo-8gray, a.typo-8gray{color:#888}
@@ -83,6 +84,13 @@ fieldset{border:0 none;margin:0;padding:0}
 /*支付方式卡片*/
 
 /*分页组件*/
+.holder a{display:inline-block;height:14px;line-height:1;font-size: 14px;cursor: pointer;padding: 7px 10px;margin:0 1px;color: #666;background-color:#e5e5e5}
+.holder a.jp-current, a.jp-current:hover{color: #c9c5e0;font-weight: bold}
+.holder a.jp-disabled, a.jp-disabled:hover{color: #666;background:none}
+.holder a.jp-current, a.jp-current:hover{cursor: default;background-color: #291783}
+.holder span{display:none}
+.holder a.jp-first, .holder a.jp-previous{margin-right:2px}
+.holder a.jp-next, .holder a.jp-last{margin-left:2px}
 
 /*layer弹出层样式*/
 
@@ -102,7 +110,7 @@ fieldset{border:0 none;margin:0;padding:0}
 .menu-bar .serial{width:4px;height:22px;}
 .menu-bar .recommond-product{width:298px;height:298px;margin-left:auto;margin-right:auto}
 .layout-con-contact{padding-bottom:80px}
-.content-area{margin-left:353px}
+.content-area{width:887px}
 /*底部*/
 .contact-wrap, .footer-wrap{width:1302px;margin-left:auto;margin-right:auto}
 .contact{margin:auto -15px}
