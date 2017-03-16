@@ -1,0 +1,9 @@
+.expert-team .expert-team-instro{margin-top:7px;padding:55px 20px 0;background:url(../images/expert-team-bg.png) no-repeat 0 0;width:464px;height:263px}
+.expert-team .expert-team-instro p{text-indent:1.8em}
+.expert-chart h2{padding: 0 100px 0 200px}
+.expert-table-box{padding-bottom:70px}
+.expert-table thead tr{background-color:#dce9ff}
+.expert-table tbody tr:nth-child(odd){background-color:#fff}
+.expert-table tbody tr:nth-child(even){background-color:#f4f8ff}
+.expert-table th{font-weight:normal;font-size:20px;line-height:1;color:#4d4d4d;padding-top:20px;padding-bottom:20px}
+.expert-table td{color:#3a4f7f;font-size:20px;line-height:1;padding-top:20px;padding-bottom:20px;text-align:center}

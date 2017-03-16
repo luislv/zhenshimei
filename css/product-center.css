@@ -46,6 +46,8 @@
 /***********************************/
 /*产品中心-产品详情*/
 /***********************************/
-.productCon-instro .specification dt.title{width:80px}
+.productCon-instro .specification-box{border-bottom:1px dashed #666}
+.productCon-instro .specification-box .specification dt.title{width:80px;text-align:justify;text-justify:distribute-all-lines;text-align-last:justify}
+.productCon-instro .button-box .button04{background-color:#06c}
 .product-moreInfo{padding-bottom:60px}
 
