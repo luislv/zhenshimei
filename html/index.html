@@ -237,7 +237,7 @@
             <div class="fl">
                 <h3 class="fn fs24 lh1 typo-cgray">华亚视光科技官方微信</h3>
                 <p class="mt10"><a href="#" class="fs18 lh3 typo-8gray">扫一扫关注咨询</a></p>
-                <div class="footer-qrcode mt15 pt15 pb15 tc bg-white"><img src="../images/qrcode.jpg" alt="" width="131" height="130"/></div>
+                <div class="footer-qrcode mt15 pt15 pb15 tc bg-white"><img src="../images/qrcode.jpg" alt="" width="131" height="130" class="mb3-m"/></div>
             </div>
         </div>
     </div>
@@ -259,11 +259,18 @@
          *  导航下拉列表
          */
         $('.J_shop').on('click', function(e) {
+            var self = $(this);
             e.preventDefault();
             e.stopPropagation();
+            if(self.hasClass('active')) {
+                self.removeClass('active');
+            } else {
+                self.addClass('active');
+            }
             $('.J_shopDropdown').slideToggle('fast');
         });
         $(document).on('click', function() {
+            $('.J_shop').removeClass('active');
             $('.J_shopDropdown').slideUp('fast');
         });
 
