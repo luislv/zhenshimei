@@ -26,6 +26,7 @@ fieldset{border:0 none;margin:0;padding:0}
 .zx2{z-index:2}
 .fs28{font-size:28px}
 .fs32{font-size:32px}
+.typo-black, a.typo-black{color:#000}
 .typo-white, a.typo-white{color:#fff !important}
 .typo-29blue, a.typo-29blue{color:#291783}
 .typo-02blue, a.typo-02blue{color:#024cc7}
@@ -57,6 +58,8 @@ fieldset{border:0 none;margin:0;padding:0}
 .bor-b-1b7gray{border-bottom:1px solid #b7cdf2}
 .bor-b-dbdgray{border-bottom:1px solid #dbdbdb}
 .bor-b-d2dgray{border-bottom:1px solid #d2d2d2}
+.bor-b-cdgray{border-bottom:1px solid #ccc}
+.bor-t-cdgray{border-top:1px solid #ccc}
 
 
 /*布局类*/
