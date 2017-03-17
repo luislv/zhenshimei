@@ -13,8 +13,6 @@
 .hotPic2{height:200px;margin-top:70px}
 .swiper-container2{margin-left:85px;margin-right:85px}
 .arrow-left2, .arrow-right2{width:68px;height:108px;padding-top:37px;top:30px}
-.arrow-left2{left:0}
-.arrow-right2{right:0}
 .arrow-left2 i, .arrow-right2 i{font-size:65px;color:#fff}
 /*主内容*/
 .mainContent{height:2052px;background:url(../images/mainContent-bg.png) no-repeat 0 0}

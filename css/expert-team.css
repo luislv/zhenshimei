@@ -1,9 +1,27 @@
+/***********************************/
+/*专家团队页面*/
+/***********************************/
 .expert-team .expert-team-instro{margin-top:7px;padding:55px 20px 0;background:url(../images/expert-team-bg.png) no-repeat 0 0;width:464px;height:263px}
 .expert-team .expert-team-instro p{text-indent:1.8em}
+/*视力问题图形统计*/
 .expert-chart h2{padding: 0 100px 0 200px}
-.expert-table-box{padding-bottom:70px}
+.expert-chart .expert-lineChart{width:530px;padding:145px 35px 30px}
+.expert-chart .expert-pieChart{width:570px}
+/*视力问题表格统计*/
+.expert-table-box{padding:60px 0 70px}
 .expert-table thead tr{background-color:#dce9ff}
 .expert-table tbody tr:nth-child(odd){background-color:#fff}
 .expert-table tbody tr:nth-child(even){background-color:#f4f8ff}
 .expert-table th{font-weight:normal;font-size:20px;line-height:1;color:#4d4d4d;padding-top:20px;padding-bottom:20px}
 .expert-table td{color:#3a4f7f;font-size:20px;line-height:1;padding-top:20px;padding-bottom:20px;text-align:center}
+/*焦点图2*/
+.expert-hotPic{height:670px;background-color:#236be1}
+.expert-hotPic .arrow-left2, .expert-hotPic .arrow-right2{width:68px;height:108px;padding-top:37px;top:280px}
+.expert-hotPic .arrow-left2 i, .expert-hotPic .arrow-right2 i{font-size:65px;color:#fff}
+.expert-swiper-slide h3{padding-top:60px}
+.expert-swiper-slide h4{color:#a4c6fe}
+.expert-swiper-slide .expert-info{padding:70px 0 0 230px}
+.expert-swiper-slide .expert-info .expert-info-instro{width:680px}
+.expert-swiper-slide .expert-info .expert-info-instro h6{color:#a4c6fe}
+.expert-swiper-slide .expert-info .expert-info-instro .instro-list{margin-top:35px;color:#d7e0f8}
+.expert-swiper-slide .expert-info .expert-info-instro .instro-list li{list-style:disc}

@@ -106,8 +106,8 @@ fieldset{border:0 none;margin:0;padding:0}
 .nav li a.active{color:#0541ad}
 /*商城下拉列表*/
 .shop-dropdown{width:183px;left:-53px;top:88px}
-.shop-dropdown li.item{border-bottom:1px solid #4d4d4d;margin-right:0}
-.shop-dropdown li.item:last-child{border-bottom:none}
+.shop-dropdown li{border-bottom:1px solid #4d4d4d;margin-right:0}
+.shop-dropdown li:last-child{border-bottom:none}
 /*侧边菜单栏*/
 .menu-bar{width:323px}
 .menu-bar .serial{width:4px;height:22px;}

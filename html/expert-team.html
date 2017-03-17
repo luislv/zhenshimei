@@ -17,20 +17,20 @@
             <img src="../images/logo-instro.jpg" alt="logo-instro" width="155" height="38" class="inblo mt25 vt"/>
         </div>
         <ul class="nav fr">
-            <li class="fl pt40 pb30 fs18 lh1"><a href="index.html" class="typo-7dgray">首页</a></li>
-            <li class="fl pt40 pb30 fs18 lh1"><a href="company-brand.html" class="typo-7dgray">公司品牌</a></li>
-            <li class="fl pt40 pb30 fs18 lh1"><a href="company-info.html" class="typo-7dgray">公司资讯</a></li>
-            <li class="fl pt40 pb30 fs18 lh1"><a href="product-center.html" class="typo-7dgray">产品中心</a></li>
-            <li class="fl pt40 pb30 fs18 lh1"><a href="expert-team.html" class="active typo-7dgray">专家团队</a></li>
-            <li class="fl pt40 pb30 fs18 lh1 pr">
+            <li class="J_item fl pt40 pb30 fs18 lh1"><a href="index.html" class="typo-7dgray">首页</a></li>
+            <li class="J_item fl pt40 pb30 fs18 lh1"><a href="company-brand.html" class="typo-7dgray">公司品牌</a></li>
+            <li class="J_item fl pt40 pb30 fs18 lh1"><a href="company-info.html" class="typo-7dgray">公司资讯</a></li>
+            <li class="J_item fl pt40 pb30 fs18 lh1"><a href="product-center.html" class="typo-7dgray">产品中心</a></li>
+            <li class="J_item fl pt40 pb30 fs18 lh1"><a href="expert-team.html" class="active typo-7dgray">专家团队</a></li>
+            <li class="J_item fl pt40 pb30 fs18 lh1 pr">
                 <a href="javascript:void(0);" class="J_shop typo-7dgray">网上商城</a>
                 <ul class="J_shopDropdown shop-dropdown pa zx2 hide">
-                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">阿里巴巴</a></li>
-                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">京东商城</a></li>
-                    <li class="item pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">天猫旗舰店</a></li>
+                    <li class="pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">阿里巴巴</a></li>
+                    <li class="pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">京东商城</a></li>
+                    <li class="pt15 pb15 bg-transparent-5gray tc"><a href="#" class="typo-white fs18 lh1">天猫旗舰店</a></li>
                 </ul>
             </li>
-            <li class="fl pt40 pb30 fs18 lh1"><a href="contact-us.html" class="typo-7dgray">联系我们</a></li>
+            <li class="J_item fl pt40 pb30 fs18 lh1"><a href="contact-us.html" class="typo-7dgray">联系我们</a></li>
         </ul>
     </div>
 </div>
@@ -56,8 +56,18 @@
             </div>
         </div>
         <!--视力不良-统计图表-->
-        <div class="expert-chart pt100">
+        <div class="expert-chart pt100 clearfix">
             <h2 class="fn typo-02blue fs22 lh4 tc">宝安区公办学校一至三年级有近三成在校学生视力不良，各年级之间平均视力不良率增长平缓，三年级之后视力不良率以每个年级约10个百分</h2>
+            <!--环形图表-->
+            <div class="expert-pieChart fl">
+                <div id="expert-pieChart"></div>
+                <h3 class="fn tc fs20 lh2 typo-9gray pl50 pr50 mt20">2016年10月我院对宝安区公办学校一至三年级， 共计87，902人进行视力检测，所获得的数据。</h3>
+            </div>
+            <!--线性图表-->
+            <div class="expert-lineChart fr">
+                <div id="expert-lineChart"></div>
+                <h3 class="fn tc fs20 lh1 typo-9gray">各年级视力不良率</h3>
+            </div>
         </div>
         <!--视力不良-统计表格-->
         <div class="expert-table-box">
@@ -129,7 +139,52 @@
     </div>
 </div>
 <!--焦点图2-->
-
+<div class="expert-hotPic layout cf pr">
+    <a class="arrow-left2 inblo bg-transparent-4gray tc pa zx2 left" href="#"><i class="iconfont">&#xe60a;</i></a>
+    <a class="arrow-right2 inblo bg-transparent-4gray tc pa zx2 right" href="#"><i class="iconfont">&#xe6ed;</i></a>
+    <div class="swiper-container2 cf">
+        <div class="swiper-wrapper">
+            <!--item-->
+            <div class="swiper-slide expert-swiper-slide">
+                <h3 class="fs32 lh1 typo-white tc">真视美强大的专家团队</h3>
+                <h4 class="fs24 lh1 mt15 tc fn">代用文案全院共计8名院士，代用文案全院共计8名院士</h4>
+                <div class="expert-info clearfix">
+                    <img src="../images/expert-avatar01.png" alt="expert avatar" width="312" height="385" class="fl"/>
+                    <div class="expert-info-instro ml50 fl">
+                        <h5 class="pt10 pl5"><img src="../images/expert-name-zhouguofu.png" alt="" width="109" height="39"/></h5>
+                        <h6 class="fn fs18 lh1 mt15">视光学专家、教授、真视美视光眼科医技总顾问</h6>
+                        <ul class="instro-list fs18 lh5">
+                            <li class="ml20">长期从事眼视光专业研究，擅长低视力助视器的验配及青少年视力健康防治和儿童视力保健工作，坚持视障人士的康复工作。</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--item-->
+            <div class="swiper-slide expert-swiper-slide">
+                <h3 class="fs32 lh1 typo-white tc">真视美强大的专家团队</h3>
+                <h4 class="fs24 lh1 mt15 tc fn">代用文案全院共计8名院士，代用文案全院共计8名院士</h4>
+                <div class="expert-info clearfix">
+                    <img src="../images/expert-avatar01.png" alt="expert avatar" width="312" height="385" class="fl"/>
+                    <div class="expert-info-instro ml50 fl">
+                        <h5 class="pt10 pl5"><img src="../images/expert-name-zhouguofu.png" alt="" width="109" height="39"/></h5>
+                        <h6 class="fn fs18 lh1 mt15">视光学专家、教授、真视美视光眼科医技总顾问</h6>
+                        <ul class="instro-list fs18 lh5">
+                            <li class="ml20">长期从事眼视光专业研究，擅长低视力助视器的验配及青少年视力健康防治和儿童视力保健工作，坚持视障人士的康复工作。</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                            <li class="ml20">国家眼睛职业技能鉴定所高级技术考评员</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--联系方式-->
 <div class="box-4">
     <div class="layout bg-00green pt40 pb40">
@@ -195,6 +250,7 @@
 </div>
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/idangerous.swiper.min.js"></script>
+<script src="../js/highcharts.js"></script>
 <script src="../js/global.js"></script>
 <script type="text/javascript">
     $(function() {
@@ -205,6 +261,185 @@
             loop: true,
             grabCursor: true,
             autoplay: 3000
+        });
+
+        /**
+         *  焦点图2
+         */
+        var mySwiper2 = new Swiper('.swiper-container2',{
+            loop: true,
+            grabCursor: true,
+            paginationClickable: true,
+            autoplay: 3000
+        });
+        $('.arrow-left2').on('click', function(e){
+            e.preventDefault();
+            mySwiper2.swipePrev();
+        });
+        $('.arrow-right2').on('click', function(e){
+            e.preventDefault();
+            mySwiper2.swipeNext();
+        });
+
+        /**
+         * 视力问题线性图表
+         */
+        Highcharts.chart('expert-lineChart', {
+            chart: {
+                type: 'line',
+                width: 530,
+                height: 300
+            },
+            credits: {  // 右下角的名片：highchart.com
+                enabled: false  // 关闭
+            },
+            legend: {  // 图例显示
+                enabled: false  // 关闭
+            },
+            title: {  // 标题
+                text: '' // 标题内容
+            },
+            xAxis: {  // 横坐标
+                categories: ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级'],
+                tickWidth: 0,  // 隐藏刻度
+                lineWidth: 1,  // x轴宽度
+                lineColor: '#b3b3b3',  // x轴颜色
+                labels: {
+                    y: 20,  // 距x轴的间距
+                    style: {  // 自定义css样式
+                        color: '#024cc7',
+                        fontSize: '14px'
+                    }
+                }
+            },
+            yAxis: {  // 纵坐标
+                title: {
+                    text: ''
+                },
+                min: 0,
+                max: 70,
+                gridLineWidth: 1,  // 横向表格线宽度，为0则隐藏
+                gridLineColor: '#b3b3b3', // 横向表格线的颜色
+                tickInterval: 10,  // 步长
+                labels: {
+                    enabled: true,  // 显示纵坐标
+                    style: {  // 自定义css样式
+                        color: '#03cb55',
+                        fontSize: '14px'
+                    },
+                    formatter: function() {  // 自定义显示内容格式
+                        return this.value + '.00%';
+                    }
+                }
+            },
+            tooltip: {  // 数据点提示框
+                valueSuffix: '%'  // 数值后缀
+            },
+            plotOptions: {  // 数据点选项
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        style: {
+                            fontWeight: 'normal',
+                            color: '#333'
+                        },
+                        formatter: function() {  // 自定义显示内容格式
+                            return this.y + '%';
+                        }
+                    }
+                }
+            },
+            series: [{  // 数据列
+                data: [28.8, 27.2, 30.32, 40.13, 48.48, 59.84],
+                name: '视力不良率',
+                color: '#ff2e55'  // 数据折线颜色
+            }]
+        });
+
+        /**
+         * 视力问题环形图表
+         */
+        var chart = null;
+        $(function () {
+            $('#expert-pieChart').highcharts({
+                chart: {
+                    type: 'pie',  // 图表类型为pie图
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false,
+                    spacing : [100, 0 , 40, 0]
+                },
+                credits: {  // 右下角的名片：highchart.com
+                    enabled: false  // 关闭
+                },
+                legend: {  // 图例显示
+                    enabled: false  // 关闭
+                },
+                title: {
+                    floating:true,
+                    text: '视力调查<br>数据统计',
+                    // verticalAlign: 'middle',
+                    // y: 10,
+                    useHTML: true,
+                    style: {  // 标题自定义样式
+                        color: '#999',
+                        fontSize: '29px'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        size: 300,  // 饼图同心圆外径
+                        innerSize: '60%',  // 饼图同心圆内径
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        colors: ['#03cb55', '#c1b5ff', 'ff2e55'],  // 环形块颜色控制
+                        dataLabels: {
+                            enabled: true,
+                            distance: 15,  // 数据标签距离饼图边缘的距离，为负数就越靠近饼图圆心
+                            format: '<b>{point.name}</b><br>{point.percentage:.1f} %'
+                            /*style: {
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                            }*/
+                        },
+                        point: {
+                            events: {
+                                /*mouseOver: function(e) {  // 鼠标滑过时动态更新标题
+                                    // 标题更新函数，API 地址：https://api.hcharts.cn/highcharts#Chart.setTitle
+                                    chart.setTitle({
+                                        text: e.target.name+ '\t'+ e.target.y + ' %'
+                                    });
+                                }*/
+                                //,
+                                // click: function(e) { // 同样的可以在点击事件里处理
+                                //     chart.setTitle({
+                                //         text: e.point.name+ '\t'+ e.point.y + ' %'
+                                //     });
+                                // }
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: '',
+                    data: [  // 数据
+                        ['未检测人数', 2.66],
+                        ['视力不良率', 36.96],
+                        ['视力正常', 60.38]
+                    ]
+                }]
+            }, function(c) {
+                // 环形图圆心
+                var centerY = c.series[0].center[1],
+                        titleHeight = parseInt(c.title.styles.fontSize);
+                c.setTitle({
+                    y:centerY + titleHeight/2
+                });
+                chart = c;
+            });
         });
     });
 </script>
