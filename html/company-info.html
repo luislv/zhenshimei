@@ -46,13 +46,15 @@
 </div>
 <!--主内容-->
 <div class="box-2 layout pt40 bor-b-dbdgray">
-    <div class="layout-con layout-con-contact clearfix">
+    <div id="tab" class="layout-con layout-con-contact clearfix">
         <!--侧边菜单栏-->
         <div class="menu-bar fl">
-            <h2 class="fn p15 typo-24blue fs18 lh1 bg-ccblue bor-b-1b7gray"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">公司资讯</span></h2>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">公司介绍</div>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">企业文化</div>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">发展历程</div>
+            <h2 class="J_menu fn p15 typo-24blue fs18 lh1 bg-ccblue bor-b-1b7gray hand"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">公司资讯</span></h2>
+            <ul class="J_dropDown" id="tabon">
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">最新资讯</li>
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">公司新闻</li>
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">行业新闻</li>
+            </ul>
             <h2 class="mt30 fn p15 typo-24blue fs18 lh1 bg-ccblue"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">推荐产品</span></h2>
             <div class="bg-e2blue pt15 pb20 typo-24blue">
                 <div class="recommond-product bg-white tc"><img src="../images/recomment-product.png" alt="" width="215" height="169" class="mt50 mb3-m"/></div>
@@ -61,121 +63,134 @@
             </div>
         </div>
         <!--内容显示区-->
-        <div class="content-area typo-3gray fr">
-            <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>最新资讯</div>
-            <div id="itemContainer">
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+        <div  id="tabcon" class="content-area typo-3gray fr">
+            <!--最新资讯 tab-->
+            <div class="J_tabcon_item hide" style="display:block">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>最新资讯</div>
+                <div id="itemContainer">
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
+                    </div>
+                    <div class="company-news pt25 pb25 clearfix">
+                        <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
+                        <div class="company-news-detail">
+                            <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
+                            <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
+                            <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
+                        </div>
                     </div>
                 </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
-                <div class="company-news pt25 pb25 clearfix">
-                    <a href="#" class="fl"><img src="../images/company-info01.jpg" alt=""  width="324" class="mb3-m"/></a>
-                    <div class="company-news-detail">
-                        <h3 class="fn pt10 fs24 lh1 typo-3gray">2016年世界爱眼日真视美助力“心明…</h3>
-                        <p class="mt25 fs16 lh3"><a href="#" class="typo-6gray">我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品和我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现从产品我们在中国继续向高端医疗市场提供领先的医疗解决方案，实现</a></p>
-                        <div class="typo-8fgray fs16 lh1 mt20">发布时间：2017-05-05</div>
-                    </div>
-                </div>
+            </div>
+            <!--公司新闻tab-->
+            <div class="J_tabcon_item hide">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>公司新闻</div>
+
+            </div>
+            <!--行业新闻tab-->
+            <div class="J_tabcon_item hide">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>行业新闻</div>
+
             </div>
             <!-- 分页条 -->
             <div class="tc mt20">
@@ -258,9 +273,16 @@
          */
         var mySwiper = new Swiper('.swiper-container',{
             loop: true,
+            height: 411,
             grabCursor: true,
             autoplay: 3000
         });
+
+        /**
+         * tab切换
+         */
+        new Tab({'root':$('#tab')});
+
         /**
          * 分页
          */

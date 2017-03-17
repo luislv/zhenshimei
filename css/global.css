@@ -61,30 +61,9 @@ fieldset{border:0 none;margin:0;padding:0}
 .bor-b-cdgray{border-bottom:1px solid #ccc}
 .bor-t-cdgray{border-top:1px solid #ccc}
 
-
 /*布局类*/
 .layout{width:1440px;margin:0 auto}
 .layout-con{width:1240px;margin:0 auto}
-
-/*图标类*/
-
-/*按钮*/
-
-/*分割线*/
-
-/*表单样式*/
-
-/*公共头部*/
-
-/*导航*/
-
-/*表格*/
-
-/*收件箱*/
-
-/*文章段落*/
-
-/*支付方式卡片*/
 
 /*分页组件*/
 .holder a{display:inline-block;height:14px;line-height:1;font-size: 14px;cursor: pointer;padding: 7px 10px;margin:0 1px;color: #666;background-color:#e5e5e5}
@@ -95,25 +74,27 @@ fieldset{border:0 none;margin:0;padding:0}
 .holder a.jp-first, .holder a.jp-previous{margin-right:2px}
 .holder a.jp-next, .holder a.jp-last{margin-left:2px}
 
-/*layer弹出层样式*/
-
-/*滚动条自定义样式*/
+/*焦点图*/
+.swiper-container .swiper-slide{height:411px}
 
 /*导航*/
 .nav{width:870px}
 .nav li{margin-right:55px}
 .nav li a{color:#7d7d7d}
 .nav li a.active{color:#0541ad}
+
 /*商城下拉列表*/
 .shop-dropdown{width:183px;left:-53px;top:88px}
 .shop-dropdown li{border-bottom:1px solid #4d4d4d;margin-right:0}
 .shop-dropdown li:last-child{border-bottom:none}
+
 /*侧边菜单栏*/
 .menu-bar{width:323px}
 .menu-bar .serial{width:4px;height:22px;}
 .menu-bar .recommond-product{width:298px;height:298px;margin-left:auto;margin-right:auto}
 .layout-con-contact{padding-bottom:80px}
 .content-area{width:887px}
+
 /*底部*/
 .contact-wrap, .footer-wrap{width:1302px;margin-left:auto;margin-right:auto}
 .contact{margin:auto -15px}

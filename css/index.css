@@ -7,11 +7,13 @@
 .arrow-right{top:220px;right:25px}
 .arrow-left i, .arrow-right i{font-size:65px;color:#fff}
 .pagination{bottom:30px}
+.swiper-container .swiper-slide{height:523px}
 .swiper-pagination-switch{display:inline-block;width:16px;height:16px;margin:0 18px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background-color:#6aace5}
 .swiper-active-switch{background-color:#fff}
 /*焦点图2*/
 .hotPic2{height:200px;margin-top:70px}
 .swiper-container2{margin-left:85px;margin-right:85px}
+.swiper-container2 .swiper-slide-cert{height:200px}
 .arrow-left2, .arrow-right2{width:68px;height:108px;padding-top:37px;top:30px}
 .arrow-left2 i, .arrow-right2 i{font-size:65px;color:#fff}
 /*主内容*/

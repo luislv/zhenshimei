@@ -3,6 +3,9 @@
 /***********************************/
 .hotPic-s{height:411px}
 /*菜单栏*/
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+.content-area .contact-map{margin:40px 10px 0;height:290px}
 .content-area .contact-info{margin-top:80px;padding-left:80px}
 .content-area .contact-info .company{width:410px}
 .content-area .contact-info .QRcode-contact{padding:6px}

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../css/swiper.min.css"/>
     <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/index.css"/>
 </head>
 <body class="bg-white">
 <!--头部-->
@@ -45,13 +44,15 @@
 </div>
 <!--主内容-->
 <div class="box-2 layout pt40 bor-b-dbdgray">
-    <div class="layout-con layout-con-contact clearfix">
+    <div id="tab" class="layout-con layout-con-contact clearfix">
         <!--侧边菜单栏-->
         <div class="menu-bar fl">
-            <h2 class="fn p15 typo-24blue fs18 lh1 bg-ccblue bor-b-1b7gray"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">公司资讯</span></h2>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">公司介绍</div>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">企业文化</div>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">发展历程</div>
+            <h2 class="J_menu fn p15 typo-24blue fs18 lh1 bg-ccblue bor-b-1b7gray hand"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">公司资讯</span></h2>
+            <ul class="J_dropDown" id="tabon">
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">公司介绍</li>
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">企业文化</li>
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">发展历程</li>
+            </ul>
             <h2 class="mt30 fn p15 typo-24blue fs18 lh1 bg-ccblue"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">推荐产品</span></h2>
             <div class="bg-e2blue pt15 pb20 typo-24blue">
                 <div class="recommond-product bg-white tc"><img src="../images/recomment-product.png" alt="" width="215" height="169" class="mt50 mb3-m"/></div>
@@ -60,14 +61,27 @@
             </div>
         </div>
         <!--内容显示区-->
-        <div class="content-area typo-3gray fr">
-            <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司品牌>公司介绍</div>
-            <h3 class="fn fs22 lh1 pt30 pb30 tc">家居体验馆-同一空间无限可能</h3>
-            <p class="tc"><img src="../images/home-museum.jpg" alt="" width="870" height="294" class="mb3-m"/></p>
-            <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
-            <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
-            <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
-            <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+        <div id="tabcon" class="content-area typo-3gray fr">
+            <!--公司介绍tab-->
+            <div class="J_tabcon_item hide" style="display:block">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司品牌>公司介绍</div>
+                <h3 class="fn fs22 lh1 pt30 pb30 tc">家居体验馆-同一空间无限可能</h3>
+                <p class="tc"><img src="../images/home-museum.jpg" alt="" width="870" height="294" class="mb3-m"/></p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+            </div>
+            <!--企业文化tab-->
+            <div class="J_tabcon_item hide">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司品牌>企业文化</div>
+
+            </div>
+            <!--发展历程tab-->
+            <div class="J_tabcon_item hide">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司品牌>发展历程</div>
+
+            </div>
         </div>
     </div>
 </div>
@@ -144,9 +158,15 @@
          */
         var mySwiper = new Swiper('.swiper-container',{
             loop: true,
+            height: 411,
             grabCursor: true,
             autoplay: 3000
         });
+
+        /**
+         * tab切换
+         */
+        new Tab({'root':$('#tab')});
     });
 </script>
 </body>

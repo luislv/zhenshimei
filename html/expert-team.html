@@ -61,7 +61,7 @@
             <!--环形图表-->
             <div class="expert-pieChart fl">
                 <div id="expert-pieChart"></div>
-                <h3 class="fn tc fs20 lh2 typo-9gray pl50 pr50 mt20">2016年10月我院对宝安区公办学校一至三年级， 共计87，902人进行视力检测，所获得的数据。</h3>
+                <h3 class="fn tc fs20 lh2 typo-9gray pl50 pr50">2016年10月我院对宝安区公办学校一至三年级， 共计87，902人进行视力检测，所获得的数据。</h3>
             </div>
             <!--线性图表-->
             <div class="expert-lineChart fr">
@@ -259,6 +259,7 @@
          */
         var mySwiper = new Swiper('.swiper-container',{
             loop: true,
+            height: 411,
             grabCursor: true,
             autoplay: 3000
         });
@@ -367,7 +368,8 @@
                     plotBackgroundColor: null,
                     plotBorderWidth: null,
                     plotShadow: false,
-                    spacing : [100, 0 , 40, 0]
+                    width: 570,
+                    height: 380
                 },
                 credits: {  // 右下角的名片：highchart.com
                     enabled: false  // 关闭
@@ -376,18 +378,15 @@
                     enabled: false  // 关闭
                 },
                 title: {
-                    floating:true,
                     text: '视力调查<br>数据统计',
-                    // verticalAlign: 'middle',
-                    // y: 10,
-                    useHTML: true,
+                    verticalAlign: 'top',
                     style: {  // 标题自定义样式
                         color: '#999',
                         fontSize: '29px'
                     }
                 },
                 tooltip: {
-                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    enabled: false
                 },
                 plotOptions: {
                     pie: {
@@ -395,40 +394,26 @@
                         innerSize: '60%',  // 饼图同心圆内径
                         allowPointSelect: true,
                         cursor: 'pointer',
-                        colors: ['#03cb55', '#c1b5ff', 'ff2e55'],  // 环形块颜色控制
+                        colors: ['#03cb55', '#c1b5ff', '#ff2e55'],  // 环形块颜色控制
                         dataLabels: {
-                            enabled: true,
-                            distance: 15,  // 数据标签距离饼图边缘的距离，为负数就越靠近饼图圆心
-                            format: '<b>{point.name}</b><br>{point.percentage:.1f} %'
-                            /*style: {
+                            enabled: true,  // 是否直接呈现数据,也就是外围显示数据与否
+                            distance: 30,  // 数据标签距离饼图边缘的距离，为负数就越靠近饼图圆心
+                            formatter: function() {
+                                return '<span style="font-size:14px;color:'+ this.color + '">' + this.point.name + '</span><br/>' + '<b style="font-size:22px;color:'+ this.color + '">' + this.y + '</b> <span style="font-size:14px;color:' + this.color + '">%</span>';
+                            },
+                            style: {
                                 color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                            }*/
-                        },
-                        point: {
-                            events: {
-                                /*mouseOver: function(e) {  // 鼠标滑过时动态更新标题
-                                    // 标题更新函数，API 地址：https://api.hcharts.cn/highcharts#Chart.setTitle
-                                    chart.setTitle({
-                                        text: e.target.name+ '\t'+ e.target.y + ' %'
-                                    });
-                                }*/
-                                //,
-                                // click: function(e) { // 同样的可以在点击事件里处理
-                                //     chart.setTitle({
-                                //         text: e.point.name+ '\t'+ e.point.y + ' %'
-                                //     });
-                                // }
                             }
                         }
                     }
                 },
-                series: [{
+                series: [{  //设置每小个饼图的颜色、名称、百分比
                     type: 'pie',
-                    name: '',
+                    name: null,
                     data: [  // 数据
-                        ['未检测人数', 2.66],
-                        ['视力不良率', 36.96],
-                        ['视力正常', 60.38]
+                        {name:'未检测人数', y:2.66, color:'#c1b5ff'},
+                        {name:'视力不良率', y:36.96, color:'#ff2e55'},
+                        {name:'视力正常', y:60.38, color:'#03cb55'}
                     ]
                 }]
             }, function(c) {

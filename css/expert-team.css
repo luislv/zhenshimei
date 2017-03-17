@@ -6,7 +6,7 @@
 /*视力问题图形统计*/
 .expert-chart h2{padding: 0 100px 0 200px}
 .expert-chart .expert-lineChart{width:530px;padding:145px 35px 30px}
-.expert-chart .expert-pieChart{width:570px}
+.expert-chart .expert-pieChart{width:570px;padding-top:80px}
 /*视力问题表格统计*/
 .expert-table-box{padding:60px 0 70px}
 .expert-table thead tr{background-color:#dce9ff}

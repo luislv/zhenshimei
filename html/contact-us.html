@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/swiper.min.css"/>
     <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/expert-team.css"/>
+    <link rel="stylesheet" href="../css/contact-us.css"/>
 </head>
 <body class="bg-white">
 <!--头部-->
@@ -45,11 +45,13 @@
 </div>
 <!--主内容-->
 <div class="box-2 layout pt40 bor-b-dbdgray">
-    <div class="layout-con layout-con-contact clearfix">
+    <div id="tab" class="layout-con layout-con-contact clearfix">
         <!--侧边菜单栏-->
         <div class="menu-bar fl">
-            <h2 class="fn p15 typo-24blue fs18 lh1 bg-ccblue bor-b-1b7gray"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">联系我们</span></h2>
-            <div class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray">联系我们</div>
+            <h2 class="J_menu fn p15 typo-24blue fs18 lh1 bg-ccblue bor-b-1b7gray hand"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">联系我们</span></h2>
+            <ul class="J_dropDown" id="tabon">
+                <li class="pt20 pb20 pl50 typo-24blue fs18 lh1 bg-e2blue bor-b-1b7gray hand">联系我们</li>
+            </ul>
             <h2 class="mt30 fn p15 typo-24blue fs18 lh1 bg-ccblue"><span class="serial inblo bg-00green mr10 vm"></span><span class="vm">推荐产品</span></h2>
             <div class="bg-e2blue pt15 pb20 typo-24blue">
                 <div class="recommond-product bg-white tc"><img src="../images/recomment-product.png" alt="" width="215" height="169" class="mt50 mb3-m"/></div>
@@ -58,21 +60,25 @@
             </div>
         </div>
         <!--内容显示区-->
-        <div class="content-area fr">
-            <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>联系我们</div>
-
-            <div class="contact-info typo-3gray clearfix">
-                <div class="company fl">
-                    <h3 class="fs24 lh1 fn">华亚视光科技有限公司</h3>
-                    <p class="mt25 fs18 lh1">地址：深圳市福田区福明路雷圳大厦一楼</p>
-                    <p class="mt15 fs18 lh1">邮编：10000</p>
-                    <p class="mt15 fs18 lh1">电话：0755-29480858</p>
-                    <p class="mt15 fs18 lh1">传真：0755-29480858</p>
+        <div id="tabcon" class="content-area fr">
+            <!--联系我们tab-->
+            <div class="J_tabcon_item hide" style="display:block">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>联系我们</div>
+                <div class="contact-map" id="dituContent">
                 </div>
-                <div class="fl">
-                    <h3 class="fs24 lh1 fn">关注华亚视光公众号</h3>
-                    <div class="QRcode-contact mt25 bg-e8gray inblo">
-                        <img src="../images/QRcode-contact.png" alt="" width="115" height="115" class="mb3-m"/>
+                <div class="contact-info typo-3gray clearfix">
+                    <div class="company fl">
+                        <h3 class="fs24 lh1 fn">华亚视光科技有限公司</h3>
+                        <p class="mt25 fs18 lh1">地址：深圳市福田区福明路雷圳大厦一楼</p>
+                        <p class="mt15 fs18 lh1">邮编：10000</p>
+                        <p class="mt15 fs18 lh1">电话：0755-29480858</p>
+                        <p class="mt15 fs18 lh1">传真：0755-29480858</p>
+                    </div>
+                    <div class="fl">
+                        <h3 class="fs24 lh1 fn">关注华亚视光公众号</h3>
+                        <div class="QRcode-contact mt25 bg-e8gray inblo">
+                            <img src="../images/QRcode-contact.png" alt="" width="115" height="115" class="mb3-m"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,6 +150,7 @@
 </div>
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?ak=HNvOCbMmPteQnBchl5P5nBrYYjBmGukW&v=2.0"></script>
 <script src="../js/global.js"></script>
 <script type="text/javascript">
     $(function() {
@@ -152,10 +159,110 @@
          */
         var mySwiper = new Swiper('.swiper-container',{
             loop: true,
+            height: 411,
             grabCursor: true,
             autoplay: 3000
         });
+
+        /**
+         * tab切换
+         */
+        new Tab({'root':$('#tab')});
     });
+</script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(114.088244,22.544817);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"华亚视光科技有限公司",content:"地址：深圳市福田区福明路雷圳大厦一楼",point:"114.088033|22.544917",isOpen:0,icon:{w:23,h:25,l:0,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
 </script>
 </body>
 </html>
