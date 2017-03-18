@@ -75,7 +75,8 @@ fieldset{border:0 none;margin:0;padding:0}
 .holder a.jp-next, .holder a.jp-last{margin-left:2px}
 
 /*焦点图*/
-.swiper-container .swiper-slide{height:411px}
+.swiper-container-411{height:411px}
+.swiper-container-411 .swiper-slide{height:411px}
 
 /*导航*/
 .nav{width:870px}
