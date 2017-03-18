@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="#"/>
     <link rel="apple-touch-icon" href="#"/>
     <link rel="stylesheet" href="../css/swiper.min.css"/>
-    <link rel="stylesheet" href="../css/animate.css"/>
     <link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
     <link rel="stylesheet" href="../css/company-info.css"/>
@@ -69,9 +68,9 @@
             </div>
         </div>
         <!--内容显示区-->
-        <div  id="tabcon" class="content-area typo-3gray fr">
+        <div id="tabcon" class="content-area typo-3gray fr">
             <!--最新资讯 tab-->
-            <div class="J_tabcon_item hide" style="display:block">
+            <div class="J_tabcon_item hide">
                 <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>最新资讯</div>
                 <div id="itemContainer">
                     <!--item-->
@@ -177,8 +176,18 @@
             </div>
             <!--行业新闻tab-->
             <div class="J_tabcon_item hide">
-                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>行业新闻</div>
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司品牌>行业新闻</div>
 
+            </div>
+
+            <div class="J_infoDetail">
+                <div class="content-nav pt15 pb15 typo-6gray fs20 lh1 bor-b-d2dgray">首页>公司资讯>最新资讯>详情</div>
+                <h3 class="fn fs22 lh1 pt30 pb30 tc">家居体验馆-同一空间无限可能</h3>
+                <p class="tc"><img src="../images/home-museum.jpg" alt="" width="870" height="294" class="mb3-m"/></p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
+                <p class="mt20 fs18 lh3 ti">真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视真视美视光眼科是以眼科学、视光学、中医学、营养学四大学科为基础，引入眼视光学新理念、新技术，运用先进的特色诊疗手段，基于眼视</p>
             </div>
         </div>
     </div>
@@ -253,7 +262,7 @@
 <script type="text/javascript">
     $(function() {
         /**
-         * 焦点图
+         *  焦点图
          */
         var mySwiper = new Swiper('.swiper-container',{
             loop: true,
@@ -265,36 +274,38 @@
         /**
          * tab切换
          */
-        new Tab({'root':$('#tab')});
-
-        /**
-         * 分页
-         */
-        $("div.holder").jPages({
-            containerID  : 'itemContainer',
-            first: '第一页',
-            last: '最后一页',
-            previous: '上一页',
-            next: '下一页',
-            perPage: 3 ,  // 每页条数
-            startPage: 1,
-            startRange: 0,
-            midRange: 4,
-            endRange: 0,
-            animation: 'wobble',
-            keyBrowse: true,
-            callback: function(pages, items){
-                $(".holder").find(".jp-last").css("border-right", "none");
-                if(pages.current == 1) {
-                    $(".jp-previous").addClass("jp-hidden");
-                }else{
-                    $(".jp-previous").removeClass("jp-hidden");
-                }
-                if(pages.current == pages.count) {
-                    $(".jp-next").addClass("jp-hidden");
-                } else{
-                    $(".jp-next").removeClass("jp-hidden");
-                }
+        new Tab({'root':$('#tab')}, function() {
+            // tab触发时，隐藏详情内容
+            $('.J_infoDetail').addClass('hide');
+            // 需要分页的html显示时，执行分页
+            if($('#itemContainer').parent().css('display') == 'block') {
+                $("div.holder").jPages({
+                    containerID  : 'itemContainer',
+                    first: '第一页',
+                    last: '最后一页',
+                    previous: '上一页',
+                    next: '下一页',
+                    perPage: 3 ,  // 每页条数
+                    startPage: 1,
+                    startRange: 0,
+                    midRange: 4,
+                    endRange: 0,
+                    animation: 'wobble',
+                    keyBrowse: true,
+                    callback: function(pages, items){
+                        $(".holder").find(".jp-last").css("border-right", "none");
+                        if(pages.current == 1) {
+                            $(".jp-previous").addClass("jp-hidden");
+                        }else{
+                            $(".jp-previous").removeClass("jp-hidden");
+                        }
+                        if(pages.current == pages.count) {
+                            $(".jp-next").addClass("jp-hidden");
+                        } else{
+                            $(".jp-next").removeClass("jp-hidden");
+                        }
+                    }
+                });
             }
         });
     });
