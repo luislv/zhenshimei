@@ -67,8 +67,8 @@
             <h2 class="fn typo-02blue fs22 lh4 tc">宝安区公办学校一至三年级有近三成在校学生视力不良，各年级之间平均视力不良率增长平缓，三年级之后视力不良率以每个年级约10个百分</h2>
             <!--环形图表-->
             <div class="expert-pieChart fl">
-                <div id="expert-pieChart"></div>
-                <h3 class="fn tc fs20 lh2 typo-9gray pl50 pr50">2016年10月我院对宝安区公办学校一至三年级， 共计87，902人进行视力检测，所获得的数据。</h3>
+                <div><img src="../images/pie-chart.png" alt="pie chart" width="570" height="360" class="mb3-m"/></div>
+                <h3 class="fn tc fs20 lh3 typo-9gray pl50 pr50 mt20">2016年10月我院对宝安区公办学校一至三年级， 共计87，902人进行视力检测，所获得的数据。</h3>
             </div>
             <!--线性图表-->
             <div class="expert-lineChart fr">
@@ -287,81 +287,6 @@
         $('.arrow-right2').on('click', function(e){
             e.preventDefault();
             mySwiper2.swipeNext();
-        });
-
-        /**
-         * 视力问题线性图表
-         */
-        Highcharts.chart('expert-lineChart', {
-            chart: {
-                type: 'line',
-                width: 530,
-                height: 300
-            },
-            credits: {  // 右下角的名片：highchart.com
-                enabled: false  // 关闭
-            },
-            legend: {  // 图例显示
-                enabled: false  // 关闭
-            },
-            title: {  // 标题
-                text: '' // 标题内容
-            },
-            xAxis: {  // 横坐标
-                categories: ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级'],
-                tickWidth: 0,  // 隐藏刻度
-                lineWidth: 1,  // x轴宽度
-                lineColor: '#b3b3b3',  // x轴颜色
-                labels: {
-                    y: 20,  // 距x轴的间距
-                    style: {  // 自定义css样式
-                        color: '#024cc7',
-                        fontSize: '14px'
-                    }
-                }
-            },
-            yAxis: {  // 纵坐标
-                title: {
-                    text: ''
-                },
-                min: 0,
-                max: 70,
-                gridLineWidth: 1,  // 横向表格线宽度，为0则隐藏
-                gridLineColor: '#b3b3b3', // 横向表格线的颜色
-                tickInterval: 10,  // 步长
-                labels: {
-                    enabled: true,  // 显示纵坐标
-                    style: {  // 自定义css样式
-                        color: '#03cb55',
-                        fontSize: '14px'
-                    },
-                    formatter: function() {  // 自定义显示内容格式
-                        return this.value + '.00%';
-                    }
-                }
-            },
-            tooltip: {  // 数据点提示框
-                valueSuffix: '%'  // 数值后缀
-            },
-            plotOptions: {  // 数据点选项
-                series: {
-                    dataLabels: {
-                        enabled: true,
-                        style: {
-                            fontWeight: 'normal',
-                            color: '#333'
-                        },
-                        formatter: function() {  // 自定义显示内容格式
-                            return this.y + '%';
-                        }
-                    }
-                }
-            },
-            series: [{  // 数据列
-                data: [28.8, 27.2, 30.32, 40.13, 48.48, 59.84],
-                name: '视力不良率',
-                color: '#ff2e55'  // 数据折线颜色
-            }]
         });
 
         /**
