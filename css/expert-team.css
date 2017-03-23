@@ -1,6 +1,12 @@
 /***********************************/
 /*专家团队页面*/
 /***********************************/
+/*导入自定义字体*/
+@font-face {
+    font-family: FZHCJT;
+    src: url('../font/方正黄草简体_0.ttf');
+}
+
 .expert-team .expert-team-instro{margin-top:7px;padding:55px 20px 0;background:url(../images/expert-team-bg.png) no-repeat 0 0;width:464px;height:263px}
 .expert-team .expert-team-instro p{text-indent:1.8em}
 /*视力问题图形统计*/
@@ -22,6 +28,7 @@
 .expert-swiper-slide h4{color:#a4c6fe}
 .expert-swiper-slide .expert-info{padding:70px 0 0 230px}
 .expert-swiper-slide .expert-info .expert-info-instro{width:680px}
+.expert-swiper-slide .expert-info .expert-info-instro h5{font-family:FZHCJT;font-size:40px;}
 .expert-swiper-slide .expert-info .expert-info-instro h6{color:#a4c6fe}
 .expert-swiper-slide .expert-info .expert-info-instro .instro-list{margin-top:35px;color:#d7e0f8}
 .expert-swiper-slide .expert-info .expert-info-instro .instro-list li{list-style:disc}
