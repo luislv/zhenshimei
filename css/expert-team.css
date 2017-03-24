@@ -3,8 +3,16 @@
 /***********************************/
 /*导入自定义字体*/
 @font-face {
-    font-family: FZHCJT;
-    src: url('../font/方正黄草简体_0.ttf');
+    /*方正黄草简体*/
+    font-family: 'FZHCJT';
+    src: url('../font/FZHCJT.eot');
+    src:
+    url('../font/FZHCJT.eot?#iefix') format('embedded-opentype'),
+    url('../font/FZHCJT.woff') format('woff'),
+    url('../font/FZHCJT.ttf') format('truetype'),
+    url('../font/FZHCJT.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .expert-team .expert-team-instro{margin-top:7px;padding:55px 20px 0;background:url(../images/expert-team-bg.png) no-repeat 0 0;width:464px;height:263px}
